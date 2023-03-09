@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta name= "viewport" content="with=device-width, initial-scale=1.0">
+<title>TARC University College</title>
+<link rel="stylesheet" href="project.css">
+<script>
+function validataForm() {
+  let x = document.forms["MyFirstForn"]["firstname"].value;
+  if (x=="") {
+	alert ("Please provide your First Name!");
+	return false;
+  }
+}
+
+</script>
+
+</head>
+<body>
+<section>
+<div class="sub-header">
+<div class="navbar">
+<img src="logo.jpg" class="logo">
+<ul>
+<li><a href="https://jie1129.github.io/presentation/project.html">Home</a></li>
+<li><a href="https://jie1129.github.io/presentation/about.html">About Us</a></li>
+<li><a href="https://jie1129.github.io/presentation/programmes.html">Course</a></li>
+<li><a href="#">Register</a></li>
+<li><a href="#">Contect Us</a></li>
+</ul>
+</div>
+<p style="font-size: 50px;">Register</p>
+</div>
+</section>
+
+<div class="background">
+<section>
+<form name=MyFirstForn onsubmit="return validataForm()">
+<div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" class="input" name="firstname" placeholder='First name' autofocus>
+       </div>  
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" class="input" name=lastname placeholder='Last name' autofocus>
+       </div>  
+        <div class="inputfield">
+          <label>Gender</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+       </div> 
+      <div class="inputfield">
+          <label>Date of Birth</label>
+          <input type="date" class="input" name=dob>
+       </div>
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="email" class="email" name-useremail placeholder='Email Address' autofocus>
+       </div> 
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input" placeholder='Phone Number' autofocus>
+       </div> 
+      <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea"></textarea>
+       </div>  
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+       </div> 
+      <div class="inputfield">
+        <input type=submit value=Submit class=btn>
+      </div>
+    </div>
+</div>
+<forn>
+</section>
+</div>
+
+</body>
+</html>
